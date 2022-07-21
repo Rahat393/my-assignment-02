@@ -1,0 +1,323 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* top section style */
+
+.top-bar {
+    display: flex;
+    background-color: black;
+    padding: 50px 50px;
+    border-radius: 50px;
+    height: 290px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.text-bar {
+    color: white;
+    width: 50%;
+}
+
+.text-bar h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.text-bar p {
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.banner-img {
+    width: 50%;
+    margin-left: 150px;
+}
+
+.watch-link {
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+
+/* asaid part */
+.asaid {
+    height: 200px;
+    width: 270px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.asaid a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.asaid-style {
+    background-color: white;
+    padding: 12px;
+    margin: 15px;
+    border-radius: 10px;
+
+}
+
+#asid-blog {
+    background-color: red;
+    color: white;
+}
+
+.transfer-style a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+
+/* main transfer part */
+.main-section {
+    display: flex;
+    margin-top: 80px;
+}
+
+.player-transfer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: -30px;
+    margin-left: 20px;
+}
+
+.transfer-part {
+    height: 300px;
+    width: 350px;
+}
+
+.transfer-style {
+    margin-top: 10px;
+}
+
+.view-button {
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+.button-part {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+
+
+/* footer part */
+footer {
+    background-color: black;
+}
+
+.last-part {
+    color: white;
+    background-color: black;
+    height: 300px;
+    margin-top: 80px;
+
+}
+
+.last-part h1 {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.last-part hr {
+    width: 70%;
+}
+
+.link {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+
+    margin-right: 35px;
+
+}
+
+.social-link {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+
+}
+
+.social-icon {
+    margin-right: 40px;
+    color: white;
+}
+
+
+/*----------------
+ media queries 
+ ---------------*/
+
+/* for mobile device */
+@media only screen and (max-width:688px) {
+
+
+    .text-bar {
+        width: 100%;
+        height: 300px;
+    }
+
+    .text-bar,
+    .watch-link {
+        margin-right: 50px;
+    }
+
+    .text-bar h1 {
+        font-size: 20px;
+    }
+
+
+    .text-bar p span {
+        visibility: hidden;
+    }
+
+    .top-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-bar {
+        height: 50px;
+    }
+
+    .banner-img img {
+        width: 200px;
+        height: 200px;
+        margin-right: 200px;
+        margin-top: 90px;
+    }
+
+
+    .player-transfer {
+        display: none;
+    }
+
+    .asaid {
+        margin-top: -60px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .asaid-style {
+        border: 1px solid rgba(128, 128, 128, 0.226);
+    }
+
+    .player-transfer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-section {
+        display: block;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .last-part {
+        margin: 0 auto;
+        background-color: black;
+    }
+
+    .link {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .social-link {
+        margin-top: 10px;
+        color: white;
+        background-color: black;
+    }
+}
+
+/* for tablet device */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .top-bar {
+        width: 90%;
+    }
+
+    .top-bar h1 {
+        font-size: 20px;
+    }
+
+    .main-section {
+        display: block;
+    }
+
+    .asaid {
+        margin-top: -20px;
+        background-color: white;
+
+    }
+
+    .asaid-style {
+        border: 1px solid rgba(128, 128, 128, 0.226);
+    }
+
+    .asaid-link {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .player-transfer {
+        margin-top: -50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text-bar p span {
+        visibility: hidden;
+    }
+
+    .top-bar a {
+        margin-bottom: 50px;
+    }
+
+    .view-button {
+        display: block;
+    }
+
+    .button-part {
+        margin-left: 280px;
+        margin-top: 50px;
+
+        margin-bottom: -20px;
+    }
+}
